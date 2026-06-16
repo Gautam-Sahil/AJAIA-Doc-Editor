@@ -1,10 +1,12 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Pointing to your Express backend
+  // Dynamically uses the current live URL location for API routing
+  baseURL: window.location.origin.includes('localhost') 
+    ? 'http://localhost:5000/api' 
+    : `${window.location.origin}/api`, 
 });
 
-// Automatically attach the JWT token to every request if it exists
 api.interceptors.request.use((config) => {
   const user = JSON.parse(localStorage.getItem('user'));
   if (user && user.token) {
