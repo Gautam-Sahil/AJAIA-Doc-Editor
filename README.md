@@ -1,3 +1,4 @@
+
 # 📝 Ajaia Collaborative Workspace
 
 
@@ -10,7 +11,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
 
 <img width="1485" height="863" alt="ajaia-doc-editor-six vercel app_ (1)" src="https://github.com/user-attachments/assets/0d9eeeac-3f7b-401e-87f4-5de15f699417" />
-
+<img width="1920" height="1080" alt="Screenshot 2026-06-17 004227" src="https://github.com/user-attachments/assets/df051135-eeba-4be1-b15d-122364c221e8" />
 
 **Ajaia Collaborative Workspace** is an enterprise‑grade full‑stack document editor built with the MERN stack. It enables teams to create, edit, share, and persist rich‑text documents with file attachments, role‑based sharing, and real‑time auto‑save – all wrapped in a premium glassmorphic UI.
 
