@@ -116,9 +116,10 @@ bash
 npm run dev
 ```
 **3. Configure the Frontend**
+```bash
 Open a new terminal at the project root:
 
-```bash
+
 cd client
 npm install
 Create a .env file in the client directory (optional – defaults to http://localhost:5000):
@@ -130,3 +131,12 @@ Start the Vite development server:
 bash
 npm run dev
 ```
+**4. Run Tests**
+
+bash
+cd server
+npm test
+```
+
+
+Developed with ❤️ by Sahil Tiwari
