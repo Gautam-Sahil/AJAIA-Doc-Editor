@@ -1,4 +1,4 @@
-# Ajaia Product Engineering Submission Index
+# Ajaia Full Stack Product Engineer - Submission
 
 **Candidate:** Sahil Tiwari  
 **Email:** sahiltiwari0077@gmail.com  
@@ -6,32 +6,82 @@
 
 ---
 
-## 📂 Included Components & Artifacts
+## 📦 Submission Package Contents
 
-1. **Source Code Bundle**
-   - `/client`: Frontend React 19 SPA running via Vite and customized Tailwind CSS.
-   - `/server`: Production-grade Node.js / Express MVC API architecture.
-2. **Technical Documentation Stack**
-   - `README.md`: Step-by-step reproduction instructions for local environments.
-   - `ARCHITECTURE.md`: Deep-dive architectural review covering design choices and data flows.
-   - `AI_WORKFLOW.md`: Detailed transparency log detailing AI-assisted development and validation strategies.
-3. **Product Operational Access Assets**
-   - **Live Deployment Link:** `[PASTE_YOUR_VERCEL_FRONTEND_URL_HERE]`
-   - **API Production Gateway Instance:** `[PASTE_YOUR_RENDER_OR_RAILWAY_BACKEND_URL_HERE]`
-   - **Walkthrough Demonstration Video Link:** `[PASTE_YOUR_LOOM_OR_YOUTUBE_URL_HERE]`
+### 1. Source Code
+- **Frontend:** React 19 + Vite + Tailwind CSS + TipTap
+- **Backend:** Node.js + Express + MongoDB + Mongoose
+- **Location:** Included in the Google Drive folder
+
+### 2. Documentation
+- `README.md` - Setup and run instructions
+- `ARCHITECTURE.md` - System design and tradeoffs
+- `AI_WORKFLOW.md` - AI usage transparency log
+- `SUBMISSION.md` - This file
+
+### 3. Live Deployment
+- **Frontend:** https://ajaia-doc-editor-six.vercel.app/
+- **API:** https://ajaia-doc-editor-six.vercel.app/api/documents
+
+### 4. Test Credentials
+| Email | Password | 
+|-------|----------|------|
+| sahiltiwari0077@gmail.com | sahiltiwari 
+| partner@gmail.com | partner 
 
 ---
 
-## ⚡ Realized Capabilites Matrix
+## ✅ Feature Completion Status
 
-| Requirement Spec | Status | Implementation Mechanics |
-| :--- | :--- | :--- |
-| **1. Document Canvas** | Complete | Managed via Headless TipTap engine. Full Bold, Italic, Underline, $H_1$/$H_2$ scales, and lists. |
-| **2. Storage Persistence** | Complete | Cloud MongoDB Atlas cluster synchronization running via Mongoose models. |
-| **3. Workspace Saving** | Complete | Custom `useDebounce` hook background worker coupled with manual **Save Canvas** check-pointing controls. |
-| **4. Ingestion Pipelines** | Complete | Multi-format client-side parser utilizing HTML5 FileReader and `mammoth` parsing engine for `.txt`, `.md`, and `.docx` assets. Appends directly into running canvas cursor streams. |
-| **5. File Attachments** | Complete | Secondary workspace asset attachment engine storing binary files as base64 string records in MongoDB with download execution hooks. |
-| **6. Security Controls** | Complete | Cryptographic JWT state authentication containing password hashing managed via `bcryptjs`. |
-| **7. Multi-User Sharing** | Complete | Role-Based Access Control (`viewer` vs `editor`) complete with isolated visual partitions on the dashboard. |
-| **8. Quality Verification** | Complete | Integration automated testing coverage implemented with Jest and Supertest. |
-| **9. Stretch Polish** | Complete | Real-time mock presence avatars, word/character metrics tracking counters, code blocks, blockquotes, and dynamic system clock session indicators. |
+| Feature | Status | Notes |
+|---------|--------|-------|
+| Document Creation | ✅ Complete | Create new docs from dashboard |
+| Document Renaming | ✅ Complete | Inline title editing |
+| Rich Text Editing | ✅ Complete | Bold, Italic, Underline, Headings, Lists |
+| Auto-Save | ✅ Complete | Debounced with visual feedback |
+| Manual Save | ✅ Complete | Save Canvas button with timestamp |
+| File Upload (Import) | ✅ Complete | .txt, .md, .docx support |
+| File Attachments | ✅ Complete | View, Download, Remove |
+| Document Sharing | ✅ Complete | Role-based (viewer/editor) |
+| Document Persistence | ✅ Complete | MongoDB Atlas |
+| User Authentication | ✅ Complete | JWT with seeded users |
+| Document Dashboard | ✅ Complete | Owned vs Shared separation |
+| Export | ✅ Complete | Markdown (.md) and PDF |
+| Testing | ✅ Complete | Jest + Supertest integration |
+
+---
+
+
+## ⏭️ What I Would Build Next (2-4 hours)
+
+1. **Real-time Collaboration** - WebSocket + Yjs for live cursors
+2. **Document Version History** - Track changes and restore
+3. **Export Enhancements** - PDF with proper formatting
+4. **Document Templates** - Pre-built templates
+5. **Improved File Handling** - Drag-and-drop upload
+
+---
+
+## 🛠️ Local Setup Instructions
+
+### Prerequisites
+- Node.js v18+
+- MongoDB Atlas account (or local MongoDB)
+
+### Backend Setup
+```bash
+cd server
+npm install
+# Create .env file with MONGO_URI and JWT_SECRET
+npm run dev
+
+### Frontend Setup
+```bash
+cd client
+npm install
+npm run dev
+
+### Running Tests
+```bash
+cd server
+npm test
