@@ -96,7 +96,7 @@ const createNewDocument = async (customTitle = 'Untitled Document', initialConte
             <UserIcon className="text-blue-500" size={20} />
             <h2 className="text-xl font-semibold">My Documents</h2>
           </div>
-          <button onClick={createNewDocument} className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg font-medium transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)] text-sm">
+          <button onClick={() => createNewDocument()} className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg font-medium transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)] text-sm">
             <Plus size={16} /> New Document
           </button>
           <input type="file" id="dash-file-upload" accept=".txt,.md,.docx" onChange={handleDashboardFileUpload} className="hidden" />
