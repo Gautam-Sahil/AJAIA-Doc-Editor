@@ -133,7 +133,7 @@ npm run dev
 ```
 **4. Run Tests**
 
-bash
+```bash
 cd server
 npm test
 ```
